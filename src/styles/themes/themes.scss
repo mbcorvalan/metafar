@@ -1,0 +1,15 @@
+:root {
+    --background-color: #{$background-dark};
+    --color: #{$primary-font-color};
+    --secondary-color: #{$secondary-font-color};
+}
+
+[data-theme="dark"] {
+    --background-color: #{$background-dark};
+    --primary-color: #{$primary-font-color};
+    --secondary-color: #{$secondary-font-color};
+}
+
+[data-theme="light"] {
+    --background-color: #{$white};
+}
