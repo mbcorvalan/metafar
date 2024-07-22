@@ -1,15 +1,20 @@
 :root {
-    --background-color: #{$background-dark};
-    --color: #{$primary-font-color};
-    --secondary-color: #{$secondary-font-color};
+    --background-color: #{$background-light};
+    --primary-color: #{$primary-font-color-light};
+    --secondary-color: #{$medium-gray};
+    --th-font-color:#{$medium-gray};
 }
 
 [data-theme="dark"] {
     --background-color: #{$background-dark};
-    --primary-color: #{$primary-font-color};
-    --secondary-color: #{$secondary-font-color};
+    --primary-color: #{$primary-font-color-dark};
+    --secondary-color: #{$medium-gray};
+    --th-font-color:#{$medium-gray};
 }
 
 [data-theme="light"] {
-    --background-color: #{$white};
+    --background-color: #{$background-light};
+    --primary-color: #{$primary-font-color-light};
+    --secondary-color: #{$medium-gray};
+    --th-font-color:#{$secondary-color-orange};
 }

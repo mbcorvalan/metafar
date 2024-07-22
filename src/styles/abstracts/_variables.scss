@@ -1,5 +1,5 @@
 //Font Families 
-$primary-font: 'Inter', sans-serif;
+$primary-font: "Roboto", sans-serif;
 
 //Breakpoints
 $screen-sm-min: 576px;
@@ -7,13 +7,35 @@ $screen-md-min: 768px;
 $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
+
 //Colors
 
-$white: #ffffff;
+// Primary Color
+$primary-color: #402952;
+
+
+// Secondary Colors
+$secondary-color-coral: #FF7F50;
+$secondary-color-orange: #FFA500;
+$secondary-color-orange-red: #FF4500;
+
+// Neutral Colors
+$white: #FFFFFF;
+$light-gray: #F0F0F0;
+$medium-gray: #6e7388;
+$black: #272729;
+
+// Accent Colors
+$gold: #FFD700;
+$electric-violet: #8A2BE2;
+
+////////////////////
 
 //Dark Theme
-$background-dark: #181a20;
-$primary-font-color: #EAECEF;
-$secondary-font-color: #848E9C;
+$background-dark: $black;
+$primary-font-color-dark: #EAECEF;
+
 
 //Light Theme  
+$background-light: $white;
+$primary-font-color-light: $black;

@@ -1,0 +1,58 @@
+.markets-overview-table {
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.8rem;
+
+
+        @include md {
+            margin: 0 2rem;
+        }
+    }
+
+    @include tableWrapper;
+
+    @include md {
+        padding: 2rem;
+    }
+}
+
+.markets-overview-tr {
+    &__wrapper {
+        color: #e5e7eb;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 0 2rem;
+    }
+}
+
+tbody td {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #2a2e38;
+}
+
+.markets-overview-ActionTable {
+    &__th {
+        font-size: 1.2rem;
+        color: var(--th-font-color);
+        font-weight: 600;
+        width: 11.0rem;
+        text-align: left;
+        padding: 1rem;
+
+        @include md {
+            width: 34.0rem;
+        }
+    }
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}

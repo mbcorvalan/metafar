@@ -1,0 +1,21 @@
+.markets-overview-header {
+    &__wrapper {
+        display: flex;
+        gap: 2.4rem;
+        flex-direction: row;
+        -webkit-align-items: baseline;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        margin: 2rem;
+        justify-content: center;
+    }
+
+    &__title {
+        color: var(--primary-color);
+    }
+
+    &__subtitle {
+        color: var(--secondary-color);
+    }
+}

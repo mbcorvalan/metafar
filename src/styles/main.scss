@@ -5,7 +5,15 @@
 // Import base styles
 @import 'base/reset';
 @import 'base/global';
-@import 'base/typography';
 
 // Import themes styles
 @import 'themes/themes';
+
+//Import components
+@import 'components/header';
+@import 'components/table';
+@import 'components/navBar';
+@import 'components/button';
+@import 'components/pagination';
+@import 'components/loading';
+@import 'components/searchForms'

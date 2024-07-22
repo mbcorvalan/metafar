@@ -1,11 +1,8 @@
-
-import Layout from './components/Layout/Layout';
+import AppRouter from './router/AppRouter';
 
 const App = () => {
   return (
-    <div className="App">
-      <Layout />
-    </div>
+    <AppRouter />
   );
 };
 

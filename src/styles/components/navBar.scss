@@ -1,0 +1,13 @@
+.markets-overview-navBar {
+    &_wrapper {
+        max-width: 100vw;
+        position: relative;
+        display: flex;
+        padding: 1.5rem;
+        justify-content: space-between;
+    }
+
+    &__img {
+        height: 1.8rem;
+    }
+}

@@ -1,0 +1,12 @@
+.markets-overview-form {
+    &__wrapper {
+        display: flex;
+        justify-content: end;
+        margin: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
