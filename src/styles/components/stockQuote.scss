@@ -1,0 +1,40 @@
+.stockQuote {
+
+    &__wrapper {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+    }
+
+}
+
+.interval {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        margin: 2rem 0;
+    }
+}
+
+.realTimeView {
+    &__title {
+        margin: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.historical-form {
+    &__dataPickers {
+        margin: 1rem;
+        display: flex;
+        gap: 10px;
+    }
+}

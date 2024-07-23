@@ -1,0 +1,22 @@
+.markets-overview-details {
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #2a2e38;
+
+        &:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        &:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    }
+
+    &__label {
+        text-align: left;
+        flex: 1;
+    }
+}

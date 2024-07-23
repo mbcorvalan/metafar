@@ -1,7 +1,7 @@
-import React from 'react';
+import NotificationMsg from '../components/Notification';
 
 export default function NotFound() {
     return (
-        <div>NotFound</div>
+        <NotificationMsg msg="Page Not Found" container="div" type="failed" />
     );
 }

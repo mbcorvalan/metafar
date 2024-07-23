@@ -5,9 +5,7 @@ import { RootState, AppDispatch } from '../redux/store/store';
 
 const useFetchActions = () => {
 	const dispatch = useDispatch<AppDispatch>();
-	const { isLoading, error } = useSelector(
-		(state: RootState) => state.allActions
-	);
+	const { isLoading, error } = useSelector((state: RootState) => state.action);
 
 	useEffect(() => {
 		dispatch(fetchActions());

@@ -1,5 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import NavBar from '../components/NavBar';
+import ActionDetails from '../pages/ActionDetails';
+import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 
 
@@ -14,6 +16,8 @@ export default function AppRouter(): JSX.Element {
             <NavBar />
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/action/:actionID/:actionExchange' element={<ActionDetails />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );

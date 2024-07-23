@@ -1,13 +1,11 @@
 // src/components/Table.tsx
 import React from 'react';
 import ActionTable from './ActionTable';
-import { Action } from '../types/action';
+import { TableProps } from '../types/props';
 
-interface TableProps {
-    data: Action[];
-}
 
 const Table: React.FC<TableProps> = ({ data }) => {
+
     return (
         <div className="markets-overview-table">
             <ActionTable ActionData={data} />

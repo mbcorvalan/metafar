@@ -1,11 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import actionsSlice from '../reducers/fetchActionsReducer';
 import actionsReducer from '../reducers/fetchActionsReducer';
+import actionReducer from '../reducers/fetchActionReducer';
+import actionRealTimeReducer from '../reducers/fetchActionRealTimeReducer';
+import actionHistoricalTimeReducer from '../reducers/fetchActionHistoricalTimeReducer';
 
 const store = configureStore({
 	reducer: {
-		allActions: actionsSlice,
-		actions: actionsReducer,
+		allActions: actionsReducer,
+		action: actionReducer,
+		actionRealTime: actionRealTimeReducer,
+		actionHistoricalTime: actionHistoricalTimeReducer,
 	},
 });
 

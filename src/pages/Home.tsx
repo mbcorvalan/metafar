@@ -8,12 +8,14 @@ import SearchForm from '../components/SearchForm';
 import usePagination from '../hooks/usePagination';
 import Skeleton from 'react-loading-skeleton';
 import { RootState } from '../redux/store/store';
-
 import 'react-loading-skeleton/dist/skeleton.css';
+import NotificationMsg from '../components/Notification';
+import { HEADER_TITLE } from '../constants/text';
+
 
 const Home: React.FC = () => {
     const { isLoading, error } = useFetchActions();
-    const filteredData = useSelector((state: RootState) => state.actions.filteredData);
+    const filteredData = useSelector((state: RootState) => state.allActions.filteredData);
 
     const itemsPerPage = 10;
 
@@ -27,10 +29,10 @@ const Home: React.FC = () => {
 
     return (
         <div className="App">
-            <Header />
-            {isLoading && <div className="loading__wrapper--table"><Skeleton count={5} /></div>}
-            {error && <p>Error: {error}</p>}
+            <Header label={HEADER_TITLE} />
             <SearchForm />
+            {isLoading && <div className="loading__wrapper--table"><Skeleton count={5} /></div>}
+            {error && <NotificationMsg msg={error} container="div" type="failed" />}
             {!isLoading && !error && <Table data={currentData} />}
             <Pagination
                 currentPage={currentPage}

@@ -1,8 +1,9 @@
 .markets-overview-form {
     &__wrapper {
         display: flex;
-        justify-content: end;
+        justify-content: start;
         margin: 2rem;
+        gap: 10px;
     }
 
     &__content {
