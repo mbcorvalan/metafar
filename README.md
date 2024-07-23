@@ -30,7 +30,7 @@ VITE_API_KEY = <Your Twelve Data API key>
 VITE_API_URL = https://api.twelvedata.com
 ```
 
-## Uso
+## Use
 
 5. Start the development server using the following command:
 
