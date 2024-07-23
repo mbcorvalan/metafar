@@ -39,3 +39,5 @@ VITE_API_URL = https://api.twelvedata.com
 ```
 
 6. Once the server is running, you can access the application from your web browser by visiting http://localhost:3000/
+
+7. Deploy : https://corvalanmetafar.netlify.app/
